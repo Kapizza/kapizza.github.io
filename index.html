@@ -1,37 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name – Resume</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+      color: #333;
+      padding: 20px;
+    }
+    
+    header {
+      background: #35424a;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+    
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #35424a;
+      font-weight: bold;
+    }
+    
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    section h2 {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #35424a;
+      padding-bottom: 5px;
+    }
+    
+    .job, .education, .project {
+      margin-bottom: 20px;
+    }
+    
+    .job h3, .education h3, .project h3 {
+      color: #35424a;
+      margin-bottom: 5px;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #35424a;
+      color: #fff;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    
+    /* Responsive design */
+    @media (min-width: 768px) {
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .flex-container > div {
+        width: 48%;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <section class="snake-section">
-        <div class="container">
-            <div class="display-items">
-
-                <div class="display" id="display">
-                    <button id="restart" class="button"> Restart </button>
-                    <div id="scores"></div>
-                    <div id="record"></div>
-                </div>
-            </div>
-            <div class="button-items">
-                <div></div> 
-                <button id="up" class="button">Up</button>
-                <div></div>
-                <button id="left" class="button">Left</button>
-                <div></div>
-                <button id="right"class="button">Right</button>
-                <div></div>
-                <button id="down" class="button">Down</button>
-            </div>
-        </div>
-    </section>
+  <!-- Header Section -->
+  <header>
+    <h1>Your Name</h1>
+    <p>Your Professional Title or Tagline</p>
+  </header>
+  
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Write a brief introduction about yourself, your professional passions, and a little about your background. This is the place to summarize who you are and what you bring to the table.</p>
+  </section>
+  
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    
+    <div class="job">
+      <h3>Job Title at Company Name</h3>
+      <p><em>Month Year – Present</em></p>
+      <ul>
+        <li>Describe your responsibilities and achievements.</li>
+        <li>Highlight projects or initiatives you led.</li>
+        <li>Mention measurable outcomes when possible.</li>
+      </ul>
+    </div>
+    
+    <div class="job">
+      <h3>Previous Job Title at Previous Company</h3>
+      <p><em>Month Year – Month Year</em></p>
+      <ul>
+        <li>Key tasks and responsibilities.</li>
+        <li>Any notable accomplishments.</li>
+      </ul>
+    </div>
+    
+  </section>
+  
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    
+    <div class="education">
+      <h3>Degree, Major</h3>
+      <p>University/College Name – <em>Graduation Year</em></p>
+    </div>
+    
+    <div class="education">
+      <h3>Another Degree/Certification</h3>
+      <p>Institute/College Name – <em>Year</em></p>
+    </div>
+    
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="flex-container">
+      <div>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+          <li>Skill 3</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Problem-solving</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    
+    <div class="project">
+      <h3>Project Title</h3>
+      <p>A brief description of the project, outlining the goal, your role, and the results or skills demonstrated.</p>
+    </div>
+    
+    <div class="project">
+      <h3>Another Project Title</h3>
+      <p>A brief description here as well. Feel free to include links if this project is viewable online.</p>
+    </div>
+    
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></p>
+    <!-- You can also add social media links or a downloadable PDF resume here -->
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
 </body>
-<script type="module" src="script.js"></script>
-
 </html>
