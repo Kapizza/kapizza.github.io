@@ -1,212 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name – Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daviti Gochitashvili – Resume</title>
   <style>
-    /* Reset some default browser styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      line-height: 1.6;
+      background-color: #f9f9f9;
       color: #333;
-      padding: 20px;
+      margin: 0;
     }
-    
-    header {
-      background: #35424a;
-      color: #ffffff;
-      padding: 20px 0;
+
+    header, footer {
+      background-color: #35424a;
+      color: white;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 20px;
     }
 
     header h1 {
-      font-size: 3rem;
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.2rem;
-    }
-    
     nav {
-      text-align: center;
-      margin-bottom: 30px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
     }
-    
-    nav a {
-      display: inline-block;
-      margin: 0 15px;
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .nav-links a {
+      margin: 10px 15px;
       text-decoration: none;
       color: #35424a;
       font-weight: bold;
     }
-    
-    section {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 28px;
+      padding: 10px 20px;
     }
-    
-    section h2 {
-      margin-bottom: 15px;
+
+    .section {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h2 {
       border-bottom: 2px solid #35424a;
       padding-bottom: 5px;
     }
-    
-    .job, .education, .project {
-      margin-bottom: 20px;
+
+    ul {
+      padding-left: 20px;
     }
-    
-    .job h3, .education h3, .project h3 {
-      color: #35424a;
-      margin-bottom: 5px;
+
+    a {
+      color: #0077cc;
     }
-    
+
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #35424a;
-      color: #fff;
-      margin-top: 20px;
-      border-radius: 5px;
+      margin-top: 40px;
     }
-    
-    /* Responsive design */
-    @media (min-width: 768px) {
-      .flex-container {
-        display: flex;
-        justify-content: space-between;
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
       }
-      .flex-container > div {
-        width: 48%;
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+        background-color: #fff;
+        text-align: right;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1>Your Name</h1>
-    <p>Your Professional Title or Tagline</p>
-  </header>
-  
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself, your professional passions, and a little about your background. This is the place to summarize who you are and what you bring to the table.</p>
-  </section>
-  
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    
-    <div class="job">
-      <h3>Job Title at Company Name</h3>
-      <p><em>Month Year – Present</em></p>
-      <ul>
-        <li>Describe your responsibilities and achievements.</li>
-        <li>Highlight projects or initiatives you led.</li>
-        <li>Mention measurable outcomes when possible.</li>
-      </ul>
-    </div>
-    
-    <div class="job">
-      <h3>Previous Job Title at Previous Company</h3>
-      <p><em>Month Year – Month Year</em></p>
-      <ul>
-        <li>Key tasks and responsibilities.</li>
-        <li>Any notable accomplishments.</li>
-      </ul>
-    </div>
-    
-  </section>
-  
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    
-    <div class="education">
-      <h3>Degree, Major</h3>
-      <p>University/College Name – <em>Graduation Year</em></p>
-    </div>
-    
-    <div class="education">
-      <h3>Another Degree/Certification</h3>
-      <p>Institute/College Name – <em>Year</em></p>
-    </div>
-    
-  </section>
-  
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="flex-container">
-      <div>
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Communication</li>
-          <li>Teamwork</li>
-          <li>Problem-solving</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    
-    <div class="project">
-      <h3>Project Title</h3>
-      <p>A brief description of the project, outlining the goal, your role, and the results or skills demonstrated.</p>
-    </div>
-    
-    <div class="project">
-      <h3>Another Project Title</h3>
-      <p>A brief description here as well. Feel free to include links if this project is viewable online.</p>
-    </div>
-    
-  </section>
-  
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></p>
-    <!-- You can also add social media links or a downloadable PDF resume here -->
-  </section>
-  
-  <footer>
-    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-  </footer>
+
+<header>
+  <h1>Daviti Gochitashvili</h1>
+  <p>PhD Candidate in Computational Condensed Matter Physics | Aspiring Quant Researcher</p>
+</header>
+
+<!-- Mobile Nav Toggle -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<nav>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Sections -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>I am a Physics PhD candidate at Binghamton University specializing in computational condensed matter physics, with a strong background in machine learning, data analysis, and scientific computing. I have industry experience in the financial sector and academic experience in materials prediction and software development.</p>
+</section>
+
+<section class="section" id="education">
+  <h2>Education</h2>
+  <p><strong>Binghamton University</strong>, Vestal, NY<br>
+    PhD in Computational Condensed Matter Physics (Expected Aug 2025)</p>
+
+  <p><strong>Free University of Tbilisi</strong>, Tbilisi, Georgia<br>
+    BS in Physics (Sept 2015 – Aug 2019)</p>
+</section>
+
+<section class="section" id="experience">
+  <h2>Experience</h2>
+
+  <h3>Graduate Researcher/Associate – Binghamton University</h3>
+  <p><em>Sept 2020 – Present</em></p>
+  <ul>
+    <li>Developed MAISE, an open-source C/Python package for machine learning in atomic simulations.</li>
+    <li>Predicted 29 new stable metal alloys using neural networks and evolutionary algorithms.</li>
+    <li>Investigated superconductors via DFT; proposed thermodynamic synthesis pathways.</li>
+    <li>Improved structure search using atom block seeding and hyperdimensional optimization.</li>
+  </ul>
+
+  <h3>Teaching Assistant – Binghamton University</h3>
+  <p><em>Sept 2020 – Present</em></p>
+  <ul>
+    <li>Led general physics discussions and lab sessions for classes of 30+ students.</li>
+    <li>Provided academic support and lab demonstrations.</li>
+  </ul>
+
+  <h3>Analyst – Developer – Bank of Georgia, Tbilisi</h3>
+  <p><em>July 2019 – Aug 2020</em></p>
+  <ul>
+    <li>Built backend services in Java and PL/SQL for banking products and database optimization.</li>
+    <li>Worked in Agile team on core system transformation.</li>
+    <li>Implemented data-driven solutions and automated cash operations processes.</li>
+  </ul>
+</section>
+
+<section class="section" id="publications">
+  <h2>Publications</h2>
+  <ul>
+    <li><strong>2023:</strong> <a href="http://dx.doi.org/10.1039/D3CP02817H" target="_blank">Machine learning search for stable binary Sn alloys</a>, Phys. Chem. Chem. Phys.</li>
+    <li><strong>2024:</strong> <a href="https://link.aps.org/doi/10.1103/PhysRevMaterials.8.114801" target="_blank">Design of MgxB2C2 and NaxBC superconductors</a>, Phys. Rev. Mater.</li>
+    <li><strong>2025 (WIP):</strong> Atom block seeding and hyperspacial optimization for structure search.</li>
+    <li><strong>2025 (WIP):</strong> Prediction of Li-Cu-BC and Li-Ag-BC metastable materials.</li>
+  </ul>
+</section>
+
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><strong>Technical:</strong> Machine learning, Data analysis, Visualization, Statistics, Stochastic calculus</li>
+    <li><strong>Programming:</strong> Python, PL/SQL, Java, C++</li>
+    <li><strong>Software:</strong> Git, Bash, Matlab, Mathematica, Microsoft Excel, Word, PowerPoint</li>
+    <li><strong>Languages:</strong> Georgian (native), English (fluent), Russian (conversational), German (basic)</li>
+  </ul>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> +1 (607) 232-2459</p>
+  <p><strong>Email:</strong> <a href="mailto:datogochitashvili@gmail.com">datogochitashvili@gmail.com</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/davitgochitashvili" target="_blank">linkedin.com/in/davitgochitashvili</a></p>
+  <p><strong>Location:</strong> Vestal, NY</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Daviti Gochitashvili. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>
